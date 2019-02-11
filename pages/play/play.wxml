@@ -1,0 +1,21 @@
+<view class="wrap">
+  <view class='child01'>
+    <view class='child02'>
+      <view class='child03'>
+        <image src='{{imgSrc}}' animation="{{animationData}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <slider value='{{musicSlider}}' bindchange="musicSliderChange"></slider>
+</view>
+<view class='content'>
+  <image src='../../images/pre.png' bindtap='preMusic'></image>
+  <view class='play'>
+    <image src='../../images/play.png' hidden='{{hiddenImg}}' bindtap='pauseMusic'></image>
+    <image src='../../images/pause.png' hidden='{{!hiddenImg}}' bindtap='playMusic'></image>
+  </view>
+ 
+  <image src='../../images/next.png' bindtap='nextMusic'></image>
+</view>

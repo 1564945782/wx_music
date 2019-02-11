@@ -1,0 +1,25 @@
+<!-- 轮播图 -->
+<swiper autoplay interval="2000" indicator-dots indicator-active-color="#56F844">
+    <swiper-item wx:for="{{imgList}}">
+      <image src='{{item}}'></image>
+    </swiper-item>
+</swiper>
+
+<!-- 音乐列表 -->
+<view class='wrap'>
+    <view class='child' wx:for="{{musicList}}">
+      <!-- 类别 -->
+      <view class='text'>
+        <view>{{item.name}}</view>
+        <view bindtap='detail' data-type="{{item.type}}">更多..</view>
+      </view>
+      <!-- 图片 -->
+      <view class='imglist'>
+        <view class='imgChild' wx:for="{{item.content}}">
+          <image src='{{item.pic_small}}'></image>
+          <view>{{item.author}}</view>
+        </view>
+      </view>
+    </view>
+
+</view>

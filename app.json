@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/play/play"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B92EEA",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "音乐"
+  }
+}

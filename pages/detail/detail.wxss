@@ -1,0 +1,10 @@
+image{
+  width: 100%;
+}
+.content{
+  padding: 10rpx 15rpx;
+  border-bottom: 1px solid #ddd;
+}
+.author{
+  color: #979599;
+}

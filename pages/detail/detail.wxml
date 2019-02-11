@@ -1,0 +1,10 @@
+<image src="{{imgSrc}}"></image>
+
+<!-- 列表 -->
+<view class='wrap'>
+    <!-- 第一条歌 -->
+    <view class='content' wx:for="{{songList}}" bindtap='playing' >
+      <view class='misicName' data-id="{{item.song_id}}" data-index="{{index}}">{{item.album_title}}</view>
+      <view class='author' data-id="{{item.song_id}}" data-index="{{index}}">{{item.author}}</view>
+    </view>
+</view>
